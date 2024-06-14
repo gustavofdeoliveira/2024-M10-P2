@@ -1,0 +1,196 @@
+_type: export
+__export_format: 4
+__export_date: 2024-06-14T13:30:09.497Z
+__export_source: insomnia.desktop.app:v9.2.0
+resources:
+  - _id: req_3977f9ab46114c2c9e90020b623ec43a
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371765299
+    created: 1718371401150
+    url: "{{ _.BaseUrl }}/blog"
+    name: Get All Blog Post
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718371401150
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    parentId: null
+    modified: 1718371387892
+    created: 1718371387892
+    name: 2024-M10-P2
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_805bee670f1f4b2aba97ff7201cebbb0
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371636574
+    created: 1718371485101
+    url: "{{ _.BaseUrl }}/blog"
+    name: Create Blog Post
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "string",
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718371401050
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7725b6d2276042e09410f08c5c592cf3
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371740659
+    created: 1718371639236
+    url: "{{ _.BaseUrl }}/blog"
+    name: Delete Blog Post
+    description: ""
+    method: DELETE
+    body:
+      mimeType: multipart/form-data
+      params: []
+    preRequestScript: ""
+    parameters:
+      - id: pair_3717af94975d44edaee390a8b76bed25
+        name: id
+        value: string
+        description: ""
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718371400950
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ab0b632c84764635b2c53420590a0283
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371767895
+    created: 1718371755941
+    url: "{{ _.BaseUrl }}/blog"
+    name: Get Blog Post
+    description: ""
+    method: GET
+    body:
+      mimeType: multipart/form-data
+      params: []
+    preRequestScript: ""
+    parameters:
+      - id: pair_3717af94975d44edaee390a8b76bed25
+        name: id
+        value: string
+        description: ""
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718251931507.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_42c317be498d41b4a13849a1e38319df
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371728966
+    created: 1718371715060
+    url: "{{ _.BaseUrl }}/blog"
+    name: Update Blog Post
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "string",
+          "content": "string"
+        }
+    preRequestScript: ""
+    parameters:
+      - id: pair_3717af94975d44edaee390a8b76bed25
+        name: id
+        value: string
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.2.0
+    authentication: {}
+    metaSortKey: -1718132462065.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_cb1f2a9e14128ae17293dc67baef23def9679c08
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371596278
+    created: 1718371387900
+    name: Base Environment
+    data:
+      BaseUrl: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - BaseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1718371387900
+    _type: environment
+  - _id: jar_cb1f2a9e14128ae17293dc67baef23def9679c08
+    parentId: wrk_2b7c1224bf4b41a69d9eac7a510dd7c4
+    modified: 1718371387904
+    created: 1718371387904
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
